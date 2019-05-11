@@ -1,0 +1,22 @@
+trie> trie
++
+trie> add lea 12
+trie> add hans 5
+trie> points hans
+5
+trie> add paul 20
+trie> add hans 5
+Error! hans could not be added.
+trie> trie
++(h(a(n(s[5])))l(e(a[12]))p(a(u(l[20]))))
+trie> add lena 23
+trie> add peter 21
+trie> add paula 6
+trie> trie
++(h(a(n(s[5])))l(e(a[12]n(a[23])))p(a(u(l(a[6])[20]))e(t(e(r[21])))))
+trie> change peter 0
+trie> trie
++(h(a(n(s[5])))l(e(a[12]n(a[23])))p(a(u(l(a[6])[20]))e(t(e(r[0])))))
+trie> delete lena
+trie> trie
++(h(a(n(s[5])))l(e(a[12]))p(a(u(l(a[6])[20]))e(t(e(r[0])))))
